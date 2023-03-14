@@ -1,9 +1,18 @@
-- name: Setup PHP environment
-  uses: nanasess/setup-php@v3.3.2
-
-
-- name: Run PHP code
-  run: php |
-    <?php
-    $welcome = "Hello, world";
-    echo $welcome; ?>
+name: Run PHP script
+on: 
+  workflow_dispatch:
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.0'
+          extensions: mbstring, curl
+          ini-values: output_buffering=On
+          tools: composer
+      - name: Run script
+        run: php script.php
