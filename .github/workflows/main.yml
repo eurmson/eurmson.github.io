@@ -1,0 +1,9 @@
+- name: Setup PHP environment
+  uses: nanasess/setup-php@v3.3.2
+
+
+- name: Run PHP code
+  run: php |
+    <?php
+    $welcome = "Hello, world";
+    echo $welcome; ?>
