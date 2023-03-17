@@ -24,7 +24,7 @@
 
 
 echo getcwd();
-// $paths = glob("*.php");
+$paths = glob("*.php");
 // full_copy("js", "build/js");
 // full_copy("css", "build/css");
 // full_copy("images", "build/images");
