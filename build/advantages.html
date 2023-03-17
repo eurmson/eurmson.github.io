@@ -1,0 +1,58 @@
+ <!doctype html>
+<html lang="en">
+	<head>
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />		
+		<title>lab17 - CSS</title>
+		
+Warning: Undefined variable $customCSS in C:\Users\eurms\Documents\Programming\HTML\lab17\inc\html-top.html on line 8
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        
+	</head>    <body>
+        <div class="container">
+            <header>
+                <h1>CSS</h1>
+                <h2>Making Html Look Nice</h2>
+            </header>
+            <nav class="menue"> 
+    <ul>
+        <li><a href="index.html" >Home⠀</a></li>
+        <li><a href="intro.html#intro" >Intro⠀</a></li>
+        <li><a href="syntax.html#Syntax" >Syntax⠀</a></li>
+        <li><a href="history.html#History" >History⠀</a></li>
+        <li><a href="browser-support.html#Browser" >Browser⠀Support⠀</a></li>
+        <li><a href="standardization.html#Standardization" >Standardization⠀</a></li>
+        <li><a href="limitations.html#Limitations" >Limitations⠀</a></li>
+        <li><a href="advantages.html#Advantages" >Advantages⠀</a></li>
+        <li><a href="contact.html#" >Contact⠀Us</a></li>
+    </ul>
+</nav>            <article>
+                <h2 id="Advantages">Advantages</h2>
+                <p>
+                    Separation of content from presentation
+                    Main article: Separation of presentation and content
+                    CSS facilitates publication of content in multiple presentation formats based on nominal parameters. Nominal parameters include explicit user preferences, different web browsers, the type of device being used to view the content (a desktop computer or mobile device), the geographic location of the user and many other variables.
+                </p>
+                <p>When CSS is used effectively, in terms of inheritance and "cascading", a global style sheet can be used to affect and style elements site-wide. If the situation arises that the styling of the elements should be changed or adjusted, these changes can be made by editing rules in the global style sheet. Before CSS, this sort of maintenance was more difficult, expensive and time-consuming.</p>
+                <p>A stylesheet, internal or external, specifies the style once for a range of HTML elements selected by class, type or relationship to others. This is much more efficient than repeating style information inline for each occurrence of the element. An external stylesheet is usually stored in the browser cache, and can therefore be used on multiple pages without being reloaded, further reducing data transfer over a network.</p>
+                
+            </article>
+            <aside>
+                <h3 id="interchagablilty">Interchagablilty</h3>
+                <p>With a simple change of one line, a different style sheet can be used for the same page. This has advantages for accessibility, as well as providing the ability to tailor a page or site to different target devices. Furthermore, devices not able to understand the styling still display the content.</p>
+                <p>Without CSS, web designers must typically lay out their pages with techniques such as HTML tables that hinder accessibility for vision-impaired users (see Tableless web design#Accessibility).</p>
+            </aside>
+        </div>
+    <div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js\menu-highlighter.js"></script>
+<script src="sss/sss.js"></script>
+<script>$(".slider").sss();</script>
+<script>$( "#accordion" ).accordion();</script>
+</div>
+</body>
+</html>

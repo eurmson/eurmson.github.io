@@ -1,0 +1,72 @@
+ <!doctype html>
+<html lang="en">
+	<head>
+		<!-- <meta http-equiv="refresh" content="1"> -->
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />		
+		<title>lab17 - CSS</title>
+		
+Warning: Undefined variable $customCSS in C:\Users\eurms\Documents\Programming\HTML\lab17\inc\html-top.html on line 8
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/navigation.css">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        
+	</head>    <body>
+        <div class="container">
+            <header>
+                <h1>CSS</h1>
+                <h2>Making Html Look Nice</h2>
+            </header>
+            <nav class="menue"> 
+    <ul>
+        <li><a href="index.html" >Home⠀</a></li>
+        <li><a href="intro.html#intro" >Intro⠀</a></li>
+        <li><a href="syntax.html#Syntax" >Syntax⠀</a></li>
+        <li><a href="history.html#History" >History⠀</a></li>
+        <li><a href="browser-support.html#Browser" >Browser⠀Support⠀</a></li>
+        <li><a href="standardization.html#Standardization" >Standardization⠀</a></li>
+        <li><a href="limitations.html#Limitations" >Limitations⠀</a></li>
+        <li><a href="advantages.html#Advantages" >Advantages⠀</a></li>
+        <li><a href="contact.html#" >Contact⠀Us</a></li>
+    </ul>
+</nav>            
+            
+            <article>
+                <h2 id="History">History</h2>
+                <figure>
+                    <img src = "images/css_image2.jpg" alt="Håkon Wium Lie">
+                    <figcaption>Håkon Wium Lie, chief technical officer of the Opera Software company and co-creator of the CSS web standards</figcaption>
+                </figure>
+                <p>CSS was first proposed by Håkon Wium Lie on 10 October 1994. At the time, Lie was working with Tim Berners-Lee at CERN. Several other style sheet languages for the web were proposed around the same time, and discussions on public mailing lists and inside World Wide Web Consortium resulted in the first W3C CSS Recommendation (CSS1) being released in 1996. In particular, a proposal by Bert Bos was influential; he became co-author of CSS1, and is regarded as co-creator of CSS.</p>
+                <p>Style sheets have existed in one form or another since the beginnings of Standard Generalized Markup Language (SGML) in the 1980s, and CSS was developed to provide style sheets for the web. One requirement for a web style sheet language was for style sheets to come from different sources on the web. Therefore, existing style sheet languages like DSSSL and FOSI were not suitable. CSS, on the other hand, let a document's style be influenced by multiple style sheets by way of "cascading" styles.</p>
+                <p>As HTML grew, it came to encompass a wider variety of stylistic capabilities to meet the demands of web developers. This evolution gave the designer more control over site appearance, at the cost of more complex HTML. Variations in web browser implementations, such as ViolaWWW and WorldWideWeb, made consistent site appearance difficult, and users had less control over how web content was displayed. The browser/editor developed by Tim Berners-Lee had style sheets that were hard-coded into the program. The style sheets could therefore not be linked to documents on the web. Robert Cailliau, also of CERN, wanted to separate the structure from the presentation so that different style sheets could describe different presentation for printing, screen-based presentations, and editors.</p>
+                <p>Improving web presentation capabilities was a topic of interest to many in the web community and nine different style sheet languages were proposed on the www-style mailing list. Of these nine proposals, two were especially influential on what became CSS: Cascading HTML Style Sheets and Stream-based Style Sheet Proposal (SSP). Two browsers served as testbeds for the initial proposals; Lie worked with Yves Lafon to implement CSS in Dave Raggett's Arena browser. Bert Bos implemented his own SSP proposal in the Argo browser. Thereafter, Lie and Bos worked together to develop the CSS standard (the 'H' was removed from the name because these style sheets could also be applied to other markup languages besides HTML).</p>
+                <p>Lie's proposal was presented at the "Mosaic and the Web" conference (later called WWW2) in Chicago, Illinois in 1994, and again with Bert Bos in 1995. Around this time the W3C was already being established, and took an interest in the development of CSS. It organized a workshop toward that end chaired by Steven Pemberton. This resulted in W3C adding work on CSS to the deliverables of the HTML editorial review board (ERB). Lie and Bos were the primary technical staff on this aspect of the project, with additional members, including Thomas Reardon of Microsoft, participating as well. In August 1996, Netscape Communication Corporation presented an alternative style sheet language called JavaScript Style Sheets (JSSS). The spec was never finished, and is deprecated. By the end of 1996, CSS was ready to become official, and the CSS level 1 Recommendation was published in December.</p>
+                <p>Development of HTML, CSS, and the DOM had all been taking place in one group, the HTML Editorial Review Board (ERB). Early in 1997, the ERB was split into three working groups: HTML Working group, chaired by Dan Connolly of W3C; DOM Working group, chaired by Lauren Wood of SoftQuad; and CSS Working group, chaired by Chris Lilley of W3C.</p>
+                <p>The CSS Working Group began tackling issues that had not been addressed with CSS level 1, resulting in the creation of CSS level 2 on November 4, 1997. It was published as a W3C Recommendation on May 12, 1998. CSS level 3, which was started in 1998, is still under development as of 2014.</p>
+                <P>In 2005, the CSS Working Groups decided to enforce the requirements for standards more strictly. This meant that already published standards like CSS 2.1, CSS 3 Selectors, and CSS 3 Text were pulled back from Candidate Recommendation to Working Draft level.</P>
+                <p>In addition to these problems, the .css extension was used by a software product used to convert PowerPoint files into Compact Slide Show files, so some web servers served all .css as MIME type application/x-pointplus rather than text/css.</p>
+            </article>
+            <aside>
+                <h3 id="Adoption">Difficulty with adoption</h3>
+                <p>
+                    Ambox current red Americas.svg
+                    This section needs to be updated. Please help update this article to reflect recent events or newly available information. (January 2019)
+                    The CSS 1 specification was completed in 1996. Microsoft's Internet Explorer 3 was released in that year, featuring some limited support for CSS. IE 4 and Netscape 4.x added more support, but it was typically incomplete and had many bugs that prevented CSS from being usefully adopted. It was more than three years before any web browser achieved near-full implementation of the specification. Internet Explorer 5.0 for the Macintosh, shipped in March 2000, was the first browser to have full (better than 99 percent) CSS 1 support, surpassing Opera, which had been the leader since its introduction of CSS support fifteen months earlier. Other browsers followed soon afterward, and many of them additionally implemented parts of CSS 2.[citation needed]
+                </p>
+                <p>However, even when later "version 5" web browsers began to offer a fairly full implementation of CSS, they were still incorrect in certain areas and were fraught with inconsistencies, bugs and other quirks. Microsoft Internet Explorer 5.x for Windows, as opposed to the very different IE for Macintosh, had a flawed implementation of the CSS box model, as compared with the CSS standards. Such inconsistencies and variation in feature support made it difficult for designers to achieve a consistent appearance across browsers and platforms without the use of workarounds termed CSS hacks and filters. The IE Windows box model bugs were so serious that, when Internet Explorer 6 was released, Microsoft introduced a backwards-compatible mode of CSS interpretation ("quirks mode") alongside an alternative, corrected "standards mode". Other non-Microsoft browsers also provided mode-switch capabilities. It therefore became necessary for authors of HTML files to ensure they contained special distinctive "standards-compliant CSS intended" marker to show that the authors intended CSS to be interpreted correctly, in compliance with standards, as opposed to being intended for the now long-obsolete IE5/Windows browser. Without this marker, web browsers that have the "quirks mode"-switching capability will size objects in web pages as IE 5 on Windows would, rather than following CSS standards.[citation needed]</p>
+                <p>Problems with patchy adoption of CSS, along with errata in the original specification, led the W3C to revise the CSS 2 standard into CSS 2.1, which moved nearer to a working snapshot of current CSS support in HTML browsers. Some CSS 2 properties that no browser successfully implemented were dropped, and in a few cases, defined behaviors were changed to bring the standard into line with the predominant existing implementations. CSS 2.1 became a Candidate Recommendation on February 25, 2004, but CSS 2.1 was pulled back to Working Draft status on June 13, 2005, and only returned to Candidate Recommendation status on July 19, 2007.</p>
+                
+                
+            </aside>
+        </div>
+        <div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="js\menu-highlighter.js"></script>
+<script src="sss/sss.js"></script>
+<script>$(".slider").sss();</script>
+<script>$( "#accordion" ).accordion();</script>
+</div>
+</body>
+</html>
