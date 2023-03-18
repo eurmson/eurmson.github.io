@@ -22,12 +22,12 @@
 //     }
 // }
 
-
+mkdir("build")
 echo getcwd();
 $paths = glob("*.php");
-// full_copy("js", "build/js");
-// full_copy("css", "build/css");
-// full_copy("images", "build/images");
+full_copy("js", "build/js");
+full_copy("css", "build/css");
+full_copy("images", "build/images");
 for ($i=0; $i < count($paths); $i++) { 
     echo $paths[$i];
     echo "\n";
