@@ -1,0 +1,27 @@
+.codeblock {
+    block-size: auto;
+    padding: 15px ;
+    border-radius: 10px;
+    background-color: #181a20;
+    color:#c8cdde;   
+}
+.php-tag {
+    color:#569CD6;
+}
+.attribute {
+    color:#9CDCF0;
+}
+.highlight {
+    color:#D7BA5E;
+}
+.quotes {
+    color:#CE915B;
+}
+span + span.ownline::before {
+    content: "\A";
+    white-space: pre;
+}
+:not(span + span).ownline::after {
+    content: "\A    ";
+    white-space: pre;
+}
