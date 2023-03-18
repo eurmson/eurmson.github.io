@@ -44,7 +44,7 @@ foreach ($paths as $key => $value) {
     file_put_contents("build/" . str_replace(".php", ".html", $value), str_replace(".php", ".html", $a));
 }    
 chdir("build");
-$paths = glob("*.*")
+$paths = glob("*.*");
 for ($i=0; $i < count($paths); $i++) { 
     echo $paths[$i];
     echo "\n";
