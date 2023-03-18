@@ -22,7 +22,7 @@ function full_copy( $source, $target ) {
     }
 }
 
-mkdir("build")
+mkdir("build");
 echo getcwd();
 $paths = glob("*.php");
 full_copy("js", "build/js");
